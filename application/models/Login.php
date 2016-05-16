@@ -8,4 +8,8 @@ class Login extends CI_Model{
 		$this->db->where('u_status',1);
 		return $this->db->get('users');
 	}
+
+	function add_product($data){
+		return $this->db->insert('products',$data);
+	}
 }
