@@ -9,9 +9,10 @@
 	}
 
 	function get_javaScript(){
-		$files = array('assets/bootstrap/js/bootstrap.min.js',
+		$files = array(
 			'assets/validation/lib/jquery.js',
 			'assets/validation/dist/jquery.validate.js',
+			'assets/bootstrap/js/bootstrap.min.js',
 			'assets/notify.js');
 
 		foreach ($files as $file) {

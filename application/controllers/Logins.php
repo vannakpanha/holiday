@@ -34,8 +34,9 @@ class Logins extends CI_Controller{
 
 	function profile(){
 		is_notLogin();
-		echo "your id is: ".$this->session->userdata('uid');
-		echo anchor('logins/sign_out','Logout');
+		$this->load->view('pages/profile');
+		/*echo "your id is: ".$this->session->userdata('uid');
+		echo anchor('logins/sign_out','Logout');*/
 	}
 
 	function sign_out(){
